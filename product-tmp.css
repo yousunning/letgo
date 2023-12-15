@@ -1,0 +1,20 @@
+table, th, td {
+  border:1px solid #2f639e;
+  border-collapse: collapse;
+}
+th, td { 
+  padding:10px 20px; 
+}
+div {
+  border:3px solid #8d8d8d;  /* 테두리 */
+}
+#container {
+  width:600px;  /* 컨테이너의 너비 */
+  border:30px;    /* 테두리 없앰 */
+
+  #description{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+
+  }
+}
