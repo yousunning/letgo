@@ -1,0 +1,17 @@
+body {
+	background-color:#8cbcff;
+	color:rgb(255, 254, 216);
+}
+
+p {
+	margin-top:80px;
+	font-size:2em;
+	font-weight:700;
+	text-align: center;
+	text-shadow:5px 5px 9px #f5e2ff;
+}
+
+p strong {
+	font-size:2.2em;
+	color:rgb(112, 85, 163);
+}
