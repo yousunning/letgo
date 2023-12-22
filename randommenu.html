@@ -1,0 +1,22 @@
+<head>
+    <title>메뉴 추천</title>
+</head>
+<body>
+    <h1>오늘의 메뉴 추천</h1>
+    <button id="menuButton">메뉴 추천 받기</button>
+    <p id="menuDisplay"></p>
+
+    <script>
+        function selectRandomMenu() { //버튼 클릭 이벤트가 selectRandomMenu 함수를 호출하여 무작위 메뉴를 선택합니다.
+            const menus = ['피자', '파스타', '초밥', '타코', '햄버거', '김밥', '라멘', '쌀국수', '짜장면', '볶음밥'];
+            const randomIndex = Math.floor(Math.random() * menus.length);
+            return menus[randomIndex];
+        }
+
+        document.getElementById("menuButton").onclick = function() {
+            const selectedMenu = selectRandomMenu();
+            document.getElementById("menuDisplay").innerText = "오늘의 메뉴 추천: " + selectedMenu;
+        };
+    </script>
+</body>
+</html>
