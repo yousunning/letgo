@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 폼 만들기 예제</title>
+<style>
+
+	h2{
+	border-radius : 5px;
+	background-color : wheat;
+	text-align : center;
+	padding : 15px 0;
+	}
+	#regform{
+	padding : 15px 20px;
+	border-radius : 10px;
+	margin : auto;
+	width : 50%;
+	background-color : SandyBrown;
+	}
+</style>
+<script>
+function signUp(){
+alert("가입하시겠습니까?");
+	document.getElementById("regform").style.display = "none";
+	document.getElementById("rname").innerHTML = document.frm1.name.value;
+	document.getElementById("remail").innerHTML = document.frm1.email.value;
+	document.getElementById("result").setAttribute("style","display : block; background-color : KjaKi;")
+}
+</script>
+</head>
+<body>
+	<h2>회원가입</h2>
+	<hr />
+	<div id = "regform">
+		<form name="frm1">
+			<label for="name">이름</label><br>
+			<input type="text" id = "name" name = "name" size ="20" /><br>
+			<hr />
+			<label for="">이메일</label><br>
+			<input type="email"  id = "email" name = "email" size ="20"/><br>
+			<button type = "button" onClick = "signUp()">가입</button><br>
+		</form>
+	</div>
+	<div id="result">
+		<h3>가입정보</h3>
+		<hr />
+		이름 : <span id = "rname"></span><br/>
+		이메일 : <span id = "remail"></span><br />
+	</div>
+	<script>
+		document.getElementById("result").style.display = "none";
+	</script>
+</body>
+</html>
